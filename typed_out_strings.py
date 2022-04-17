@@ -1,3 +1,6 @@
+from lib2to3.pytree import convert
+
+
 class Stack:
     def __init__(self) -> None:
         self. v=  []
@@ -18,27 +21,26 @@ class Stack:
         return self.v[self.length -1 ]
 
 
+def convertToStack(s: Stack, s1: str) -> Stack:
+    for i in s1:
+        if(i == '#'):
+            s.pop()
+        else:
+            s.push(i)
+
 
 def solution(str1, str2):
     stk1 = Stack()
     stk2 = Stack()
 
-    for i in str1:
-        if(i == '#'):
-            stk1.pop()
-        else:
-            stk1.push(i)
+    convertToStack(stk1, str1)
+    convertToStack(stk2, str2)
 
-    for j in str2:
-        if(j == '#'):
-            stk2.pop()
-        else:
-            stk2.push(j)
-    
+
     s1 = ''.join(stk1.v)
     s2 = ''.join(stk2.v)
 
     return s1 == s2
 
-print(solution('a####B', 'b'))
+print(solution('a####b', 'b'))
 
