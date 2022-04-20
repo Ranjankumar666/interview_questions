@@ -52,10 +52,9 @@ def solution(head, m, n):
 
     
 
-ll = LinkedList[int]()
+# ll = LinkedList[int]()
 
-for i in range(1, 6):
-    ll.add(i)
+# for i in range(1, 6):
+#     ll.add(i)
 
-ll.head = solution(ll.head,1, 2)
-ll.print()
+# ll.head = solution(ll.head,1, 2)

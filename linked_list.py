@@ -14,6 +14,7 @@ class LinkedList(Generic[T]):
     def __init__(self) -> None:
         super().__init__()
         self.head: Node[T] = None
+        self.length = 0
 
     def reverse(self):
         t = self.head
@@ -39,6 +40,7 @@ class LinkedList(Generic[T]):
 
         if self.head is None:
             self.head = node;
+            self.length = 1
             return
         
         t = self.head
@@ -47,6 +49,10 @@ class LinkedList(Generic[T]):
             t = t.next
         
         t.next = node
+        self.length += 1
+
+    def __len__(self):
+        return self.length
 
     def print(self):
         t = self.head
