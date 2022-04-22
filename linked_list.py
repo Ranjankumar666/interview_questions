@@ -15,6 +15,9 @@ class LinkedList(Generic[T]):
         super().__init__()
         self.head: Node[T] = None
         self.length = 0
+    
+    def isEmpty(self) -> bool:
+        return self.head == None
 
     def reverse(self):
         t = self.head
@@ -33,6 +36,30 @@ class LinkedList(Generic[T]):
             curr = next
         
         self.head = prev
+
+    
+    def beforeTargetK(self,head, k):
+        t = head
+        i  = 1
+        
+        while ( i < k):
+            t = t.next
+            i += 1
+        
+        return t
+        
+
+    def delNode(self,head, n):
+        if head is None:
+            return
+        
+        if n == 1:
+            head = head.next
+            return head
+            
+        k = self.beforeTargetK(head , n- 1)
+        t = k.next
+        k.next = t.next
 
     
     def add(self, x: T):
@@ -60,3 +87,67 @@ class LinkedList(Generic[T]):
         while t:
             print(t.data, end=' ')
             t = t.next
+
+def getAlternate(head):
+    if head is None or head.next is None:
+        return head
+    
+    curr = head
+    alt = None
+    i = None
+
+    while curr:
+        if curr.next is None  :
+            break
+
+        temp = curr.next.next
+        temp2 = curr.next
+
+        curr.next = temp
+        temp2.next = None
+
+        if alt is None:
+            alt = temp2
+            i = temp2
+        else:
+            i.next = temp2
+            i = temp2
+
+        curr = curr.next   
+        
+    return alt
+
+def reverse(head):
+    if head is None and head.next is None:
+        return head
+    
+    t = head
+    
+    prev = None
+    curr = t
+    nxt = None
+    
+    while curr:
+        nxt = curr.next
+        curr.next = prev
+        prev = curr
+        curr =nxt
+        
+    head = prev
+
+    return head
+
+
+ll = LinkedList()
+
+for i in [1, 2, 3, 4, 5]:
+    ll.add(i)
+
+alts = getAlternate(ll.head)
+alts  =reverse(alts)
+
+t = alts
+
+while t:
+    print(t.data)
+    t = t.next

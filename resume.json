@@ -1,0 +1,213 @@
+{
+	"basics": {
+		"name": "Ranjan Kumar",
+		"label": "Developer",
+		"image": "https://en.gravatar.com/userimage/206610349/2e68cee3b2a4cc2a6319f41dce36c2ba.jpg",
+		"email": "typhonazazel@gmail.com",
+		"phone": "6290855325",
+		"website": "https://github.com/Ranjankumar666",
+		"summary": "Hey, I am Ranjan Kumar and I am an aspiring full stack web developer. I am currently in the second year of my Computer Science Engineering degree. Although I don't have a job experience, I am trying to gain as much skills as I can to be job ready. ",
+		"location": {
+			"address": "L/P 216/9/5, Near shree guru ashram, Tarak Builders, Sonamukhi",
+			"postalCode": "700 141",
+			"city": "Kolkata",
+			"countryCode": "IN",
+			"region": "India"
+		},
+		"profiles": [
+			{
+				"network": "Github",
+				"username": "RanjanKumar666",
+				"url": "https://github.com/Ranjankumar666"
+			},
+			{
+				"network": "LinkedIn",
+				"username": "ranjan-kumar-1000371b5",
+				"url": "https://www.linkedin.com/in/ranjan-kumar-1000371b5/"
+			},
+			{
+				"network": "Stackoverflow",
+				"username": "ranjan-kumar",
+				"url": "https://stackoverflow.com/users/14631114/ranjan-kumar"
+			}
+		]
+	},
+	"work": [],
+	"volunteer": [],
+	"education": [
+		{
+			"institution": "Meghnad Saha Institute oF Technology",
+			"area": "Computer Scienece And Engineering",
+			"studyType": "Bachelor",
+			"startDate": "2019-07-19"
+		}
+	],
+	"awards": [],
+	"skills": [
+		{
+			"name": "Web Development",
+			"level": "Intermediate",
+			"keywords": [
+				"HTML",
+				"CSS",
+				"SASS",
+				"Javascript ES6+",
+				"React",
+				"React/Redux",
+				"Next.js",
+				"Python/Flask",
+				"PostgreSQL",
+				"MongoDB",
+				"Mongoose",
+				"Tailwind CSS",
+				"Express",
+				"NodeJS",
+				"REST",
+				"Socket.io",
+				"Typescript",
+				"Swagger/Open Api 3",
+				"Django"
+			]
+		},
+
+		{
+			"name": "Machine Learning",
+			"level": "Beginner",
+			"keywords": ["Python", "Pandas", "Numpy", "Scikit-Learn"]
+		}
+	],
+	"publications": [],
+	"languages": [
+		{
+			"language": "Hindi",
+			"fluency": "Native speaker"
+		},
+		{
+			"language": "English",
+			"fluency": "Not a native speaker but can converse in it"
+		},
+		{
+			"language": "Bengali",
+			"Flucency": "Can fluently talk"
+		}
+	],
+	"interests": [
+		{
+			"name": "Graphic Designing",
+			"keywords": [
+				"Adobe Illustrator",
+				"Adobe PhotoShop",
+				"Adobe Xd",
+				"Figma"
+			],
+			"description": "I have an interest in Graphic designing for very long time. I make logos for heavy metal bands as a side work. I have a facebook page called 'Casus Artem' through which I conduct my business"
+		}
+	],
+	"references": [],
+	"projects": [
+		{
+			"name": "Memeterest: Pinterest Clone",
+			"description": "Project made for Free Code Camp  course",
+			"keywords": [
+				"NodeJS",
+				"Javascript",
+				"React",
+				"React/Redux",
+				"REST"
+			],
+			"url": "https://pinclone-26bb0.web.app/",
+			"roles": ["Lead Developer", "Designer"],
+			"image": "https://user-images.githubusercontent.com/10413754/79948155-e5e9da80-84a5-11ea-83eb-34e2f5aa89f6.png",
+			"type": "web application"
+		},
+		{
+			"name": "Burger Builder",
+			"description": "Project made while learing react",
+			"keywords": ["NodeJS", "Javascript", "React", "Markdown"],
+			"url": "https://burger-builder-7ad47.web.app/",
+			"roles": ["Lead Developer", "Designer"],
+			"image": "https://user-images.githubusercontent.com/10413754/79948155-e5e9da80-84a5-11ea-83eb-34e2f5aa89f6.png",
+			"type": "web application"
+		},
+		{
+			"name": "NetMeet- Video Calling App",
+			"description": "Project made with React, NodeJS and Typescript",
+			"keywords": [
+				"NodeJS",
+				"Typescript",
+				"React",
+				"WebRTC",
+				"WebSockets",
+				"PeerJS"
+			],
+			"url": "https://netstorm.in",
+			"roles": ["Designer"],
+			"image": "https://user-images.githubusercontent.com/10413754/79948155-e5e9da80-84a5-11ea-83eb-34e2f5aa89f6.png",
+			"type": "web application"
+		},
+		{
+			"name": "Flask Blog",
+			"description": "Blog website with flask backend",
+			"keywords": ["Flask", "Javascript"],
+			"url": "https://flaskblog2000.herokuapp.com/",
+			"roles": ["Lead Developer", "Designer"],
+			"image": "https://user-images.githubusercontent.com/10413754/79948155-e5e9da80-84a5-11ea-83eb-34e2f5aa89f6.png",
+			"type": "web application"
+		},
+		{
+			"name": "My portfolio",
+			"description": "Website for my portfolio",
+			"keywords": ["React", "Javascript"],
+			"url": "https://myportfolio-4e454.web.app/",
+			"roles": ["Lead Developer", "Designer"],
+			"image": "https://user-images.githubusercontent.com/10413754/79948155-e5e9da80-84a5-11ea-83eb-34e2f5aa89f6.png",
+			"type": "web application"
+		},
+
+		{
+			"name": "jsfakeit",
+			"description": "A node library to generate randomd data",
+			"keywords": ["Javascript", "Typescript"],
+			"url": "https://www.npmjs.com/package/jsfakeit",
+			"type": "node package"
+		},
+		{
+			"name": "Nexter",
+			"description": "Layout design for a dummy real state project called Nexter",
+			"keywords": ["CSS", "Javascript", "HTML"],
+			"url": "https://ranjankumar666.github.io/nexter/",
+			"roles": ["Lead Developer", "Designer"],
+			"image": "https://user-images.githubusercontent.com/10413754/79948155-e5e9da80-84a5-11ea-83eb-34e2f5aa89f6.png",
+			"type": "web application"
+		},
+		{
+			"name": "Trillo",
+			"description": "Layout design for a dummy hotel project called Trillo",
+			"keywords": ["CSS", "Javascript", "HTML", "Flexbox"],
+			"url": "https://ranjankumar666.github.io/cssFlexTrillo/",
+			"roles": ["Lead Developer", "Designer"],
+			"image": "https://user-images.githubusercontent.com/10413754/79948155-e5e9da80-84a5-11ea-83eb-34e2f5aa89f6.png",
+			"type": "web application"
+		},
+		{
+			"name": "Snippetor",
+			"description": "Online editor for JS, C, TS, C++ and Python",
+			"keywords": [
+				"CSS",
+				"Javascript",
+				"HTML",
+				"Flexbox",
+				"Node JS",
+				"React",
+				"Web Socket"
+			],
+			"url": "https://editor.netstorm.in",
+			"roles": ["Lead Developer", "Designer"],
+			"image": "https://user-images.githubusercontent.com/10413754/79948155-e5e9da80-84a5-11ea-83eb-34e2f5aa89f6.png",
+			"type": "web application"
+		}
+	],
+	"meta": {
+		"theme": "elegant"
+	}
+}

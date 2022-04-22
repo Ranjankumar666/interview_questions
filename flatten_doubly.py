@@ -22,3 +22,5 @@ def flatten(head):
             t.child = None
         
         t = t.next
+    
+    return head
