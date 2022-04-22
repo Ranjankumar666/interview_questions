@@ -138,16 +138,3 @@ def reverse(head):
     return head
 
 
-ll = LinkedList()
-
-for i in [1, 2, 3, 4, 5]:
-    ll.add(i)
-
-alts = getAlternate(ll.head)
-alts  =reverse(alts)
-
-t = alts
-
-while t:
-    print(t.data)
-    t = t.next
