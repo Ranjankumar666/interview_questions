@@ -44,12 +44,9 @@ linkedList2 = LinkedList[int]()
 for i in range(1, 6):
     linkedList.add(i)
 
-for i in [2,4,6,7]:
+for i in [1, 2, 4]:
     linkedList2.add(i)
 
-linkedList2.print()
-print(end="\n")
-linkedList2.reverse()
-linkedList2.print()
+
 # print(findMid(linkedList.head))
-# print(findMid(linkedList2.head))
+print(findMid(linkedList2.head))

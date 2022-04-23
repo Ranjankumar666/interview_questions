@@ -45,5 +45,5 @@ def startEndOfTagret(arr, k):
 
 
 
-arr= [1, 3, 3, 5,5, 5,8 , 9]
+arr= [1, 3, 3, 5,8 , 9]
 print(startEndOfTagret(arr, 5))

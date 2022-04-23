@@ -8,19 +8,40 @@ def getLastElement(head):
 
     return t
 
-
 def flatten(head):
+
+    if head is None:
+        return head
+    
+    t = head
+
+    while t:
+        if t.child:
+            nxtOfT = t.next 
+            lastOfChild = getLastElement(t.child)
+            lastOfChild.next = nxtOfT
+            t.next = t.child
+            t.child = None
+
+def flattenDoubly(head):
+    if head is None:
+        return head
 
     t = head
 
     while t:
         if t.child:
-            temp1 = t.next
-            x = getLastElement(t.child)
-            x.next = temp1
-            t.next = x
+            nxtOfT = t.next
+            t.child.prev = t 
+            lastOfChild = getLastElement(t.child)
+            lastOfChild.next = nxtOfT
+            
+            if(nxtOfT): 
+                nxtOfT.prev = lastOfChild
+            t.next = t.child
             t.child = None
         
         t = t.next
     
     return head
+    

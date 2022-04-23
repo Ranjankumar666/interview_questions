@@ -61,6 +61,9 @@ class LinkedList(Generic[T]):
         t = k.next
         k.next = t.next
 
+    def addAll(self, arr: list[T]):
+        for i in arr:
+            self.add(i)
     
     def add(self, x: T):
         node = Node[T](x)
