@@ -11,7 +11,15 @@ def partition(arr, left, right):
     return pIndex
 
 
+def quickSort(arr, left ,right):
+
+    if left < right:
+        pivot = partition(arr, left, right)
+        quickSort(arr, left, pivot -1)
+        quickSort(arr , pivot + 1, right)
+
+
 arr = [2,8, 6, 0, 7]
 
-partition(arr, 0 , 3)
+quickSort(arr, 0, len(arr) -1)
 print(arr)
