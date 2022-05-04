@@ -36,14 +36,15 @@ def startEndOfTagret(arr, k):
     n = len(arr)
     
     low = lower(arr, 0, n-1, k)
-    high = upper(arr, 0 , n-1, k)
+    #  below one is faster on leetcode
+    # high = upper(arr, 0 , n-1, k) 
+    if low == -1: return [-1, -1]
+
+    high = upper(arr, low, n-1, k)
+
+    return [low, high]
 
 
-    i = arr[low - 1] if low - 1 >= 0 else -1
-    j = arr[high + 1]if high + 1< n else -1
-    return [i , j]
 
-
-
-arr= [1, 3, 3, 5,8 , 9]
+arr= [1, 3, 3, 5,5, 9]
 print(startEndOfTagret(arr, 5))
