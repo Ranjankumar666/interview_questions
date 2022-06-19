@@ -8,11 +8,43 @@ def get(arr, start, end):
     
 ''''
     # eq: current_cpacity = min(maxL, maxR) - curr_height 
+    #
     # use two pointers
     # chose the smallest one as current height
     # if greater maxL | maxR ( depending upon which pointer is small) updated and move
-    # else update total height += naxL | maxR - arr[p1 | p2]
+    # else update total height += maxL | maxR - arr[p1 | p2]
 '''
+
+def soln_practice(arr):
+    
+    n = len(arr)
+    
+    
+    p1 = 0
+    p2 = n -1
+    total = 0
+    maxL = 0
+    maxR = 0
+    
+    
+    
+    while p1 < p2:
+        current_capacity = None
+        
+        if arr[p1] < arr[p2]:  
+            maxL = max(arr[p1], maxL)   
+            current_capacity = maxL - arr[p1]
+            
+            p1 += 1
+        else:
+            maxR = max(arr[p2], maxR)
+            current_capacity = maxR - arr[p2]
+            
+            p2 -= 1
+            
+        total  += current_capacity
+        
+    return total
 
 def soln_v2(arr):
     n = len(arr)
