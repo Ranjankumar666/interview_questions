@@ -1,6 +1,5 @@
 
 from itertools import count
-from turtle import Turtle
 
 
 def bruteForce(S: str) -> int:

@@ -1,30 +1,17 @@
-def maxProductSubArray(arr):
-    prodArr = [-float('inf'), 0]
+def maxProductSubArray(arr, i =0):
+    N = len(arr)
+    if i == N -2:
+        return max(arr[0], arr[1], arr[0]*arr[1])
+    if i == N - 1:
+        return arr[0]
+    
+    
+    
+    res = maxProductSubArray(arr, i+1)
+
+    return max(res, res*arr[i], arr[i])
 
 
-    def solution(arr, start, end):
-        if len(arr) <= 0:
-            return 1
-
-        if len(arr) == 1:
-            return arr[0]
-
-        left = arr[start: end]
-        right = arr[end:]
-
-        prod  = solution(left, start, end-1)*solution(right, end, end)
-
-        if prod > prodArr[0]:
-            prodArr[0] = prod
-            prodArr[1] = end - start + 1
-        
-        
-        return prod
-
-    solution(arr, 0 , len(arr) )
-
-    return prodArr[1]
-
-
-arr = [6 , -3, -10, 0 , 2 ]
-print(maxProductSubArray(arr))
+print(maxProductSubArray([6 , -3, -10, 0 , 2 ]))
+print(maxProductSubArray([-8, -6, -1]))
+print(maxProductSubArray([2, 3, 4, 5, -1, 0]))
